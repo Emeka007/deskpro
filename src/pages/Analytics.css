@@ -1,0 +1,11 @@
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+@media (max-width: 768px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.analytics-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+@media (max-width: 900px) { .analytics-row { grid-template-columns: 1fr; } }
+
+.agent-leaderboard { display: flex; flex-direction: column; gap: 14px; padding-top: 8px; }
+.agent-row  { display: flex; align-items: center; gap: 10px; }
+.rank   { font-size: 12px; color: #B4B2A9; font-weight: 700; width: 16px; }
+.a-name { font-size: 13px; color: #1a1a1a; width: 56px; font-weight: 500; }
+.a-count { font-size: 12px; font-weight: 700; color: #185FA5; width: 24px; text-align: right; }

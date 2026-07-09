@@ -1,0 +1,26 @@
+.list-header { display: flex; align-items: center; gap: 10px; }
+.page-title  { font-size: 20px; font-weight: 700; }
+.ticket-count { font-size: 13px; color: #888780; background: #F1EFE8; padding: 3px 10px; border-radius: 20px; }
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 0.5px solid rgba(0,0,0,.10);
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+}
+
+.search-wrap { position: relative; flex: 1; min-width: 200px; }
+.search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #B4B2A9; }
+.search-input { padding-left: 32px !important; }
+.search-clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; cursor: pointer; color: #888780;
+  display: flex; padding: 2px;
+}
+
+.filter-select { width: auto; min-width: 130px; }
+.clear-btn { color: #888780; border-color: transparent; }

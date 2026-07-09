@@ -1,0 +1,21 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+@media (max-width: 768px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+}
+@media (max-width: 900px) { .charts-row { grid-template-columns: 1fr; } }
+
+.chart-card    { padding: 16px 20px; }
+.chart-card-sm { padding: 16px 20px; }
+
+.priority-bars { display: flex; flex-direction: column; gap: 12px; padding-top: 8px; }
+.priority-row  { display: flex; align-items: center; gap: 10px; }
+.p-name  { font-size: 12px; color: #5F5E5A; width: 28px; font-weight: 600; flex-shrink: 0; }
+.p-count { font-size: 12px; font-weight: 600; color: #1a1a1a; width: 20px; text-align: right; flex-shrink: 0; }
