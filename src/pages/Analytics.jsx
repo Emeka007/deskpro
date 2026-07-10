@@ -5,8 +5,8 @@ import {
 } from 'recharts';
 import { useTickets } from '../hooks/useTickets';
 import StatCard from '../components/StatCard/StatCard';
-import { STATUSES, PRIORITIES, CATEGORIES, AGENTS } from '../data/mockData';
-import { statusColor, priorityColor } from '../utils/helpers';
+import { STATUSES, CATEGORIES, AGENTS } from '../data/mockData';
+import { statusColor } from '../utils/helpers';
 import './Analytics.css';
 
 export default function Analytics() {
@@ -15,7 +15,6 @@ export default function Analytics() {
   useEffect(() => { load(); }, [load]);
 
   const statusData   = STATUSES.map(s => ({ name: s,             value: tickets.filter(t => t.status === s).length,   fill: statusColor(s) }));
-  const priorityData = PRIORITIES.map(p => ({ name: p.split(' - ')[0], value: tickets.filter(t => t.priority === p).length, fill: priorityColor(p) }));
   const categoryData = CATEGORIES.map(c => ({ name: c,           value: tickets.filter(t => t.category === c).length }));
 
   const trendData = Array.from({ length: 14 }, (_, i) => {

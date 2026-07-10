@@ -64,7 +64,6 @@ export default function CreateWizard() {
   const [errors, setErrors] = useState({});
 
   const currentSchema = FORM_SCHEMA[step];
-  const isLastStep    = step === FORM_SCHEMA.length - 1;
 
   const handleChange = (key, value) => {
     setValues(v => ({ ...v, [key]: value }));

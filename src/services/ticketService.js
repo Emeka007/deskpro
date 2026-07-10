@@ -1,4 +1,4 @@
-import { generateTickets, AGENTS, PRIORITIES, CATEGORIES } from '../data/mockData';
+import { generateTickets, AGENTS } from '../data/mockData';
 
 // In-memory store (replace with real fetch() calls against a .NET API)
 let DB = generateTickets();

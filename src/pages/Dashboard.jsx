@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend,
@@ -21,7 +20,6 @@ function volumeData() {
 
 export default function Dashboard() {
   const { tickets, loading, stats, load } = useTickets();
-
   useEffect(() => { load(); }, [load]);
 
   const statusData = STATUSES.map(s => ({
